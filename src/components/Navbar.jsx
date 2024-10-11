@@ -45,7 +45,7 @@ const Navbar = () => {
           </div>
           <div className="d-flex gap-4">
             <Link to={"/"} className="text-decoration-none text-black">
-              <h4 style={{ fontSize: "20px" }}>Feeds</h4>
+              <h4 style={{ fontSize: "20px" ,color:'red' }}>Feeds</h4>
             </Link>
             <Link to={"/"} className="text-decoration-none text-black">
               <h4 style={{ fontSize: "20px" }}>Screens</h4>
