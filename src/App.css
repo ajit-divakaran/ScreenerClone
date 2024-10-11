@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Fontello';
+    src: url('../public/Fonts/fontello.00dfcfa1d7a1.woff2');
+}
+@font-face {
+    font-family: 'Inter-Roman';
+    src: url('../public/Fonts/Inter-roman.var.66c6e4088364.woff2');
+}
+
+*{
+    font-family: 'Inter-Roman';
+}
+
+:root{
+    --bs-font: 1rem;
+}
+
+.fixed-footer{
+    position: fixed;
+    bottom:0;
+    /* height:50px; */
+   
+}
+
+.nav-item-div{
+    height:85px;
+    width:5rem;
+    &>div>h5{
+        color:white;
+    }
+    &>div:hover{
+        background-color: whitesmoke;
+    }
+
+}
+
+.nav-item-div:hover h5{
+    color:black;
+}
+
+.circle-btn{
+    width:48px;
+    height:55px;
+    transform:scale(1.08);
+    border:20px solid #212529;
+    box-sizing: content-box;
+    margin-top: -20px;
+    
+}
+
+.login:hover{
+    background-color: antiquewhite;
+    color:rgb(50, 50, 50);
+    cursor:pointer;
+}
+
+#responsive-font{
+    font-size: calc(var(--bs-font) + 0.25vw); 
+}
+
+.blue-hover{
+    color:grey;
+    border: 0.5px solid #c8c8c8;
+    &:hover{
+
+        color:#645df9;
+    }
+}
+
+.common-hover:hover{
+    color:#645df9;
+
+}
+
+.right-hover:hover{
+    cursor: pointer;
+}
+.right-hover>div>h4{
+    color:#232323;
+}
+.right-hover:hover>div>h4{
+    color:#645df9;
+    
+}
