@@ -33,12 +33,13 @@ const Body = () => {
                   alt=""
                   width="12px"
                   height="14px"
+                  className="me-3"
                 />
               </div>
               <div className="d-flex gap-2">
                 <button className = "d-flex gap-2 align-items-center p-1 px-2 rounded p-2" style={{border:'1px solid grey',letterSpacing:'1.4px'}}>
                     <img src="https://cdn-icons-png.flaticon.com/128/12595/12595867.png" alt="" width="17px"/>
-                    <h4 className="m-0" id="responsive-font" style={{'--bs-font':'0.72rem',color:'#5c5c5c'}}>WATCHLIST VIEW</h4>
+                    <h4 className="m-0 d-none d-md-block" id="responsive-font" style={{'--bs-font':'0.72rem',color:'#5c5c5c'}}>WATCHLIST VIEW</h4>
                 </button>
                 <button className="rounded px-3" style={{border:'1px solid grey'}}>
                   <FontAwesomeIcon icon={faList} style={{ color: "#645df9" }} />

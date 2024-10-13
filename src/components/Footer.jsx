@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='row w-100 py-4 px-4' style={{boxSizing:'border-box'}}>
+    <div className='row w-100 py-4 px-4 footer' style={{boxSizing:'border-box'}}>
         <div className="col-6">
             <img src="https://cdn-static.screener.in/img/logo-black.f44abb4998d1.svg" width="128px" alt="" className='mb-4'  />
             <h4 id="responsive-font" style={{'--bs-font':'1rem'}} className='mb-4'>Stock analysis and screening tool</h4>
