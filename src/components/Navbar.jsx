@@ -43,21 +43,23 @@ const Navbar = () => {
             />
           </div>
           <div className="d-none d-md-flex gap-4">
-            <Link to={"/"} className="text-decoration-none text-black">
-              <h4
-                id="responsive-font"
-                style={{ "--bs-font": "1.1rem"}}
-              >
+            <Link to={"/"} className="text-decoration-none text-black nav-link">
+              <h4 id="responsive-font" style={{ "--bs-font": "1.1rem" }}>
                 Feeds
               </h4>
             </Link>
-            <Link to={"/screens"} className="text-decoration-none text-black">
-              <h4                 id="responsive-font"
-                style={{ "--bs-font": "1.1rem" }}>Screens</h4>
+            <Link
+              to={"/screens"}
+              className="text-decoration-none text-black nav-link"
+            >
+              <h4 id="responsive-font" style={{ "--bs-font": "1.1rem" }}>
+                Screens
+              </h4>
             </Link>
-            <Link to={"/"} className="text-decoration-none text-black">
-              <h4                 id="responsive-font"
-                style={{ "--bs-font": "1.1rem" }}>Tools</h4>
+            <Link to={"/"} className="text-decoration-none text-black nav-link">
+              <h4 id="responsive-font" style={{ "--bs-font": "1.1rem" }}>
+                Tools
+              </h4>
             </Link>
           </div>
         </div>
@@ -65,7 +67,7 @@ const Navbar = () => {
           <div>
             <input
               type="text"
-              className="p-2 rounded ms-3"
+              className="p-2 rounded ms-3 input-box"
               style={{
                 border: "0.05px solid #a1a0a0",
                 width: "calc(8.5rem + 8.5vw)",
@@ -78,7 +80,7 @@ const Navbar = () => {
               border: "1px solid black",
               display: "inline-flex",
               gap: "8px",
-  
+
               alignItems: "center",
             }}
             className="px-3 rounded login d-none d-md-inline-flex"
@@ -89,8 +91,13 @@ const Navbar = () => {
               height="20px"
               alt=""
             />
-            <h5 className="m-0 d-none d-lg-block" id="responsive-font"
-                style={{ "--bs-font": "0.75rem" }}>User</h5>
+            <h5
+              className="m-0 d-none d-lg-block"
+              id="responsive-font"
+              style={{ "--bs-font": "0.75rem" }}
+            >
+              User
+            </h5>
           </div>
         </div>
       </nav>

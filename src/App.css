@@ -14,6 +14,7 @@
 :root{
     --bs-font: 1rem;
     --margin-bottom:0;
+    scroll-behavior: smooth;
 }
 
 .fixed-footer{
@@ -107,6 +108,10 @@
     bottom:0;
 }
 
+.input-box:focus-visible{
+    outline: 1px solid #645df9;
+    box-shadow: 0 0 5px #645df9;
+}
 
 @media (max-width:768px){
     
@@ -116,6 +121,30 @@
         } */
         
         .footer{
-        margin-bottom: 75px;
+        margin-bottom: 8rem;
         }
+}
+.nav-link{
+    position: relative;
+}
+.nav-link::after{
+    content:'';
+    z-index:1;
+    width:0%;
+    height:1.5px;
+    background-color: #645df9;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: width 0.25s ease-in-out;
+
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+.modes>li:hover>*,.modes>li:hover{
+    color: #645df9;
+
 }

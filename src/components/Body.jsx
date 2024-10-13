@@ -1,12 +1,13 @@
 import { faBullhorn, faDragon, faList } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import News from "./News";
 import RightHover from "./RightHover";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons/faChartLine";
 import { faCalendarDays } from "@fortawesome/free-regular-svg-icons";
 
 const Body = () => {
+  const [showMore,setShowMore] = useState(false)
   return (
     <div className="row m-0" style={{ backgroundColor: "#ebeff5" }}>
       <div className="col-md-1"></div>
@@ -57,7 +58,15 @@ const Body = () => {
             <News day={"1 October 2024"} title={"Indostar Capital"} body={"Board Meeting Intimation for Intimation Under Regulation 29 Of The SEBI (Listing Obligations And Disclosures Requirements) Regulations, 2015 ('Listing Regulations')"} headline={"Board meeting to approve Q2 financial results."}/>
             <News title={"PG Electroplast "} body={"Resolutions Passed At The 22Nd Annual General Meeting"}/>
             <News title={"PG Electroplast "} body={"Shareholder Meeting / Postal Ballot-Scrutinizer''s Report"} headline={"Voting results of 22nd Annual General Meeting."}/>
-            <button className="w-100 py-2 blue-hover rounded mb-3" style={{fontWeight:'600',"--bs-font":"0.72rem",letterSpacing:'2px'}}id="responsive-font">SHOW MORE</button>
+
+            {showMore &&  
+            <>
+            
+            <News day={"27 September 2024"} title={"Laxmi Cotspin"} body={"Shareholders meeting"} headline={"Laxmi Cotspin Limited has informed regarding Proceedings of Annual General Meeting held on September 27, 2024. Further, the company has submitted the Exchange a copy of Srutinizers report …"}/>
+            <News title={"PG Electroplast "} body={"Resolutions Passed At The 22Nd Annual General Meeting"}/>
+            <News title={"Morepen Labs"} body={"Announcement under Regulation 30 (LODR)-Change in Management"} headline={"Appointment of Mr. Amrit Ravi as Vice President."}/>
+            </>}
+            <button className="w-100 py-2 blue-hover rounded mb-3" style={{fontWeight:'600',"--bs-font":"0.72rem",letterSpacing:'2px'}}id="responsive-font" onClick={()=>setShowMore(!showMore)}>{!showMore?'SHOW MORE':'SHOW LESS'}</button>
           </div>
           <div className="col-4">
             <div className="mt-4 p-3 rounded bg-light mb-3">
